@@ -1,5 +1,6 @@
 import {create} from 'zustand';
-import {Todo} from './types';
+import supabase from "src/api";
+import {Todo} from "src/entities/todo";
 
 interface TodoStore {
     todos: Todo[];
@@ -8,11 +9,16 @@ interface TodoStore {
     deleteTodo: (id: number) => void;
 }
 
+const { data: items, } = await supabase
+    .from('items')
+    .select('*')
+
+
 export const useTodoStore = create<TodoStore>((set) => ({
-    todos: [],
+    todos: items || [],
     addTodo: (text) =>
         set((state) => ({
-            todos: [...state.todos, {id: Date.now(), text, completed: false}]
+            todos: [...state.todos, {id: Date.now(), text, completed: false, created_at: Date.now().toString()}]
         })),
     toggleTodo: (id) =>
         set((state) => ({
