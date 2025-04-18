@@ -1,6 +1,6 @@
-import {Card, Typography} from 'src/shared/ui/antd';
-import {AddTodoForm} from 'src/features/add-todo';
-import {TodoList} from 'src/widgets/todo-list';
+import {Card, Typography} from '@/shared/ui/antd';
+import {AddTodoForm} from '@/features/add-todo';
+import {TodoList} from '@/widgets/todo-list';
 
 const {Title} = Typography;
 

@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {useTodoStore} from 'src/entities/todo';
+import {useTodoStore} from '@/entities/todo';
 import {Button, Input} from 'antd';
 import {PlusOutlined} from '@ant-design/icons';
 

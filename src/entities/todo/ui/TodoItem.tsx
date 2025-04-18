@@ -1,7 +1,7 @@
-import {Todo} from '../model/types';
 import {useTodoStore} from '../model/store';
 import {Button, Checkbox, List} from 'antd';
 import {DeleteOutlined} from '@ant-design/icons';
+import {Todo} from "@/entities/todo";
 
 interface TodoItemProps {
     todo: Todo;
