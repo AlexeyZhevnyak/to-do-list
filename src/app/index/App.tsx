@@ -18,6 +18,7 @@ export const App = () => {
                 return []
             }
         }
+
         initData().then(value => addTodos(value))
 
 
