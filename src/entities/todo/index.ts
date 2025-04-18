@@ -1,4 +1,4 @@
-import {Tables} from "src/shared/types/generated.ts";
+import {Tables} from "@/shared/types/supabase.ts";
 
 export type Todo = Tables<'items'>
 export {TodoItem} from './ui/TodoItem';

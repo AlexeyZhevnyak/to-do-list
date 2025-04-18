@@ -1,10 +1,10 @@
 import './App.css'
-import HomePage from "src/pages/home/ui/HomePage.tsx";
-import supabase from "src/api";
+import HomePage from "@/pages/home/ui/HomePage";
+import supabase from "@/shared/api";
 import {useEffect} from "react";
-import {useTodoStore} from "src/entities/todo";
+import {useTodoStore} from "@/entities/todo";
 
-function App() {
+export const App = () => {
     const addTodos = useTodoStore(state => state.addTodos)
 
     useEffect(() => {
@@ -27,6 +27,4 @@ function App() {
             <HomePage/>
         </div>
     )
-}
-
-export default App
+} 

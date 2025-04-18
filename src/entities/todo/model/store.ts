@@ -1,5 +1,5 @@
 import {create} from 'zustand';
-import {Todo} from "src/entities/todo";
+import {Todo} from "@/entities/todo";
 
 interface TodoStore {
     todos: Todo[];
