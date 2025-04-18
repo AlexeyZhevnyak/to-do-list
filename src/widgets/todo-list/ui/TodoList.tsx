@@ -1,5 +1,4 @@
-import {TodoItem} from '@/entities/todo';
-import {useTodoStore} from '@/entities/todo';
+import {TodoItem, useTodoStore} from '@/entities/todo';
 import {List} from 'antd';
 
 export const TodoList = () => {
