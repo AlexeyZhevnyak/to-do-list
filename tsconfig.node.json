@@ -7,8 +7,5 @@
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
     "outDir": "./dist"
-  },
-  "include": [
-    "vite.config.ts"
-  ]
+  }
 }
